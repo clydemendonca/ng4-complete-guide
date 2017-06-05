@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  sectionToDisplay = 'Recipe';
+
+  displaySection(sectionData) {
+    this.sectionToDisplay = sectionData.section;
+  }
+
 }
